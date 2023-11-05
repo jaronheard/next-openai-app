@@ -8,7 +8,8 @@ export default function Chat() {
       console.log("error", error);
     },
     onFinish(message) {
-      console.log("finish", message);
+      console.log("onFinish", message);
+      window.alert("onFinish");
     },
     onResponse(data) {
       console.log("response", data);
