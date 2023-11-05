@@ -2,7 +2,7 @@
 import OpenAI from "openai";
 import { OpenAIStream, StreamingTextResponse } from "ai";
 
-export const systemPrompt = `You parse calendar events from the provided text into iCal format and return the iCal file. Use the following rules:
+const systemPrompt = `You parse calendar events from the provided text into iCal format and return the iCal file. Use the following rules:
 # General
 - MOST IMPORTANT: ONLY RETURN A VALID ICAL FILE
 - DO NOT RETURN ADDITIONAL INFORMATION
